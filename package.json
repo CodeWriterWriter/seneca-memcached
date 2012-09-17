@@ -1,0 +1,28 @@
+{
+  "name": "seneca-memcached",
+  "version": "0.0.0",
+  "description": "memcached plugin for seneca",
+  "main": "lib/memcached.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "seneca",
+    "memcached",
+    "plugin"
+  ],
+  "author": "Richard Rodger",
+  "license": "BSD",
+
+  "dependencies": {
+    "underscore": ">=1.1.4",
+    "memcached": "0.0.10"
+  },
+
+  "devDependencies": {
+    "vows":"*",
+    "async":"*",
+    "eyes":"*"
+  }
+}
