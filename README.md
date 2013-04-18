@@ -63,7 +63,7 @@ You'll also need [memcached](http://memcached.org/)
 
 ## Common Cache API
 
-Seneca has a common caching API for the following actions:
+Seneca has a common caching API with the following actions:
 
    * _role:cache, cmd:set_ ; store a value - _key_ and _val_ arguments required
    * _role:cache, cmd:get_ ; retreive a value - _key_ argument is required
@@ -71,6 +71,8 @@ Seneca has a common caching API for the following actions:
    * _role:cache, cmd:delete_ ; delete a value - _key_ argument is required, no error if key does not exist
    * _role:cache, cmd:incr_ ; increment a value - _key_ and _val_ (integer) arguments required
    * _role:cache, cmd:decr_ ; decrement a value - _key_ and _val_ (integer) arguments required
+
+All caching plugins, including this one, implement this action API.
 
 ## Extended API
 
