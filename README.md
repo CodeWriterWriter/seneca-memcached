@@ -65,28 +65,28 @@ You'll also need [memcached](http://memcached.org/)
 
 Seneca has a common caching API for the following actions:
 
-    * _role:cache, cmd:set_ ; store a value - _key_ and _val_ arguments required
-    * _role:cache, cmd:get_ ; retreive a value - _key_ argument is required
-    * _role:cache, cmd:add_ ; store a value, only if the key does not exist - _key_ and _val_ arguments required
-    * _role:cache, cmd:delete_ ; delete a value - _key_ argument is required, no error if key does not exist
-    * _role:cache, cmd:incr_ ; increment a value - _key_ and _val_ (integer) arguments required
-    * _role:cache, cmd:decr_ ; decrement a value - _key_ and _val_ (integer) arguments required
+   * _role:cache, cmd:set_ ; store a value - _key_ and _val_ arguments required
+   * _role:cache, cmd:get_ ; retreive a value - _key_ argument is required
+   * _role:cache, cmd:add_ ; store a value, only if the key does not exist - _key_ and _val_ arguments required
+   * _role:cache, cmd:delete_ ; delete a value - _key_ argument is required, no error if key does not exist
+   * _role:cache, cmd:incr_ ; increment a value - _key_ and _val_ (integer) arguments required
+   * _role:cache, cmd:decr_ ; decrement a value - _key_ and _val_ (integer) arguments required
 
 ## Extended API
 
-The full (memcached API)[https://code.google.com/p/memcached/wiki/NewCommands] is also available. Use the action pattern
+The full [memcached API](https://code.google.com/p/memcached/wiki/NewCommands) is also available. Use the action pattern
 _plugin:memcached, cmd:..._ where cmd is one of 
 _set, get, add, delete, incr, decr, replace, append, prepend, cas, gets, stats, flush_.
 
 To access the underlying [memcached instance](https://github.com/3rd-Eden/node-memcached), 
 use the action _plugin:memcached, cmd:native_.
 
-The plugin also registers with _role:seneca, cmd:close_. This closes the memcached connection when you call the _seneca.close_ method.
+The plugin also registers with the action _role:seneca, cmd:close_. This closes the memcached connection when you call the _seneca.close_ method.
 
 
 ### Options
 
-You can use any of the options from the [node-memcached](https://github.com/3rd-Eden/node-memcached), 
+You can use any of the options from the [node-memcached](https://github.com/3rd-Eden/node-memcached)
 module directly as options to this plugin:
 
 ```JavaScript
