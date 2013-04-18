@@ -2,7 +2,7 @@
 
 ### Node.js Seneca Memcached module
 
-This module is a plugin for the Seneca framework. It provides a set of common caching actions (get, set, etc), backed by memcached.
+This module is a plugin for the [Seneca framework](http://senecajs.org). It provides a set of common caching actions (get, set, etc), backed by memcached.
 It also exposes all the memcached specific actions (append, prepend, etc).
 
 By moving cache operations into Seneca, you can change your cache implementation or business rules at a later point.
