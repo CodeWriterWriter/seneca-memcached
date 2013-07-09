@@ -14,9 +14,10 @@ For example, you might decide to send certain kinds of keys to a different cache
 If you're using this module, feel free to contact me on twitter if you
 have any questions! :) [@rjrodger](http://twitter.com/rjrodger)
 
-Current Version: 0.2.0
+Current Version: 0.2.1
 
-Tested on: node 0.8.16, seneca 0.5.6
+Tested on: node 0.10.6, 0.8.7, Seneca 0.5.9
+
 
 
 ### Quick example

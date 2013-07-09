@@ -1,6 +1,6 @@
 {
   "name": "seneca-memcached",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "memcached plugin for seneca",
   "main": "lib/memcached.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
 
   "devDependencies": {
-    "seneca": "0.5.x"
+    "seneca": ">=0.5.9"
   },
 
 
